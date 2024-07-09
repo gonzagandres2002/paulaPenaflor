@@ -6,6 +6,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container:{
+      padding: '1rem',
+      center: true,
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -16,12 +20,12 @@ module.exports = {
       },
       colors: {
         primary:{
-          DEFAULT: '#292f36',
+          DEFAULT: '#000000',
           hover:'#343e4a'
         },
         secondary:'#4d5053',
         accent:{
-          DEFAULT: '#cda274',
+          DEFAULT: '#000000',
           secondary: '#f4f0ec',
           hover: '#b88c5d',
         }
