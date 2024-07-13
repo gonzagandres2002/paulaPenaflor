@@ -11,6 +11,7 @@ a{
 }
 
 h1, h2, h3, h4, h5, h6{
+  font-family: 'Playfair';
   @apply text-primary;
 }
 
@@ -26,6 +27,11 @@ h1, h2, h3, h4, h5, h6{
   @apply text-[25px];
 }
 
+
+.nav-is-open{
+  @apply h-[350px] p-6;
+}
+
 .btn{
   @apply h-[75px] px-[30px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2;
 }
@@ -38,6 +44,9 @@ h1, h2, h3, h4, h5, h6{
   @apply bg-accent hover:bg-accent-hover;
 }
 
-.nav-is-open{
-  @apply h-[350px] p-6;
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullet{
+  @apply bg-primary
+}
+.swiper-pagination > .swiper-pagination-bullet{
+  @apply bg-primary
 }
