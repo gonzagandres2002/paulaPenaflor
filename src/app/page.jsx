@@ -1,15 +1,13 @@
 "use client";
 import { useEffect } from "react";
-import Navbar from "./navbar/navbar";
-import Hero from "./hero/hero";
-import Steps from "./steps/steps";
-import About from "./about/about";
-import Testimonial from "./testimonial/testimonial";
-import Work from "./work/work";
-import Stats from "./stats/stats";
-import News from "./news/news";
-import Contact from "./contact/contact";
-import Footer from "./footer/footer";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Steps from "@/components/Steps";
+import About from "@/components/About";
+import Testimonial from "@/components/Testimonial";
+import Stats from "@/components/Stats";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Page() {
   useEffect(() => {
@@ -84,9 +82,7 @@ export default function Page() {
           <Steps />
           <About />
           <Testimonial />
-          <Work />
           <Stats />
-          <News />
           <Contact />
           <Footer />
         </div>

@@ -15,19 +15,17 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        hero: "url('/images/hero.png')",
-        grid: "url('/images/grid.png')",
       },
       colors: {
         primary:{
-          DEFAULT: '#000000',
-          hover:'#343e4a'
+          DEFAULT: '#292f36',
+          hover:'#04362b'
         },
         secondary:'#4d5053',
         accent:{
-          DEFAULT: '#c48e51',
+          DEFAULT: '#c48e51', 
           secondary: '#f4f0ec',
-          hover: '#b88c5d',
+          hover: '#b88c5d', 
         }
       }
     },
