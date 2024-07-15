@@ -38,7 +38,7 @@ function About() {
           {/**Image */}
           <div className="about__img order-1 xl:order-none mx-auto xl-mx-0">
             <Image
-              src="/images/paula.jpg"
+              src="/images/paula-min.jpg"
               alt=""
               width={6000 / 7}
               height={4000 / 7}
