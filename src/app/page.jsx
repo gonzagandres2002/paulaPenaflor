@@ -9,7 +9,7 @@ import Stats from "@/components/Stats";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
-export default function Page() {
+export default function HomePage() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       import("scrollreveal").then((module) => {
@@ -76,7 +76,7 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <main className="max-w-[1920px] mx-auto bg-white overflow-hidden ">
+      <main className="max-w-[1920px] mx-auto bg-white overflow-hidden">
         <div>
           <Hero />
           <Steps />

@@ -6,8 +6,8 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    container:{
-      padding: '1rem',
+    container: {
+      padding: "1rem",
       center: true,
     },
     extend: {
@@ -15,19 +15,20 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        socials: "url('/images/bg.jpg')",
       },
       colors: {
-        primary:{
-          DEFAULT: '#292f36',
-          hover:'#04362b'
+        primary: {
+          DEFAULT: "#292f36",
+          hover: "#04362b",
         },
-        secondary:'#4d5053',
-        accent:{
-          DEFAULT: '#c48e51', 
-          secondary: '#f4f0ec',
-          hover: '#b88c5d', 
-        }
-      }
+        secondary: "#4d5053",
+        accent: {
+          DEFAULT: "#c48e51",
+          secondary: "#f4f0ec",
+          hover: "#b88c5d",
+        },
+      },
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer mt-[80px] xl:mt-[150px] relative z-20">
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px] px-44">
+        <div className="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px] xl:px-44">
           <div className="footer__item w-full max-w-[400px] mx-auto mb-auto text-center xl:text-left">
             {/**Logo */}
             <a className="flex justify-center xl:justify-start mb-8" href="#">

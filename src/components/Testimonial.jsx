@@ -1,20 +1,15 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 function Testimonial() {
   useEffect(() => {
     const swiper = new Swiper(".swiper", {
-      modules: [Navigation, Pagination],
+      modules: [Navigation],
       loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
       spaceBetween: 20,
       breakpoints: {
         320: {
@@ -23,9 +18,13 @@ function Testimonial() {
         960: {
           slidesPerView: 2,
         },
-        1200: {
+        1280: {
           slidesPerView: 3,
         },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   }, []);
@@ -35,9 +34,9 @@ function Testimonial() {
       className="testimonial mt-[80px] xl:mt-[200px] relative z-20"
       id="testimonial"
     >
-      <div className="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px] px-6">
+      <div className="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px] px-24">
         {/**slider */}
-        <div className="flex flex-col items-center pt-[88px] pb-[110px]">
+        <div className="flex flex-col items-center pt-[40px]">
           <h2 className="testimonial__title h2 mb-9 text-center">
             What clients say
           </h2>
@@ -47,7 +46,7 @@ function Testimonial() {
                 {/**slide 1 */}
                 <div className="swiper-slide">
                   {/**item */}
-                  <div className="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
+                  <div className="testimonial__item w-full max-w-[400px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
                     <div className="flex gap-4 mb-6">
                       <Image
                         src="/testimonials/01.png"
@@ -71,7 +70,7 @@ function Testimonial() {
                 {/**slide 2 */}
                 <div className="swiper-slide">
                   {/**item */}
-                  <div className="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
+                  <div className="testimonial__item w-full max-w-[400px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
                     <div className="flex gap-4 mb-6">
                       <Image
                         src="/testimonials/02.png"
@@ -94,7 +93,7 @@ function Testimonial() {
                 {/**slide 3 */}
                 <div className="swiper-slide">
                   {/**item */}
-                  <div className="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
+                  <div className="testimonial__item w-full max-w-[400px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
                     <div className="flex gap-4 mb-6">
                       <Image
                         src="/testimonials/03.png"
@@ -117,7 +116,7 @@ function Testimonial() {
                 {/**slide 4 */}
                 <div className="swiper-slide">
                   {/**item */}
-                  <div className="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
+                  <div className="testimonial__item w-full max-w-[400px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
                     <div className="flex gap-4 mb-6">
                       <Image
                         src="/testimonials/04.png"
@@ -139,8 +138,9 @@ function Testimonial() {
                 </div>
               </div>
             </div>
-            {/**Swiper pagination */}
-            <div className="swiper-pagination"></div>
+            {/** swiper buttons */}
+              <div className="swiper-button-prev pl-10"></div>
+              <div className="swiper-button-next pr-10"></div>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ function Steps() {
               Collect financial documents and apply for pre-approval to know
               your budget.
             </p>
-            <a href="#" className="font-medium justify-center flex">
+            <a href="#" className="font-medium justify-center flex items-center">
               Read more
               <RiArrowRightFill />
             </a>
@@ -32,7 +32,7 @@ function Steps() {
               Choose a real estate agent, list your needs, search for homes, and
               make an offer.
             </p>
-            <a href="#" className="font-medium justify-center flex">
+            <a href="#" className="font-medium justify-center flex items-center">
               Read more
               <RiArrowRightFill />
             </a>
@@ -48,7 +48,7 @@ function Steps() {
               Make an offer, handle inspections, and work through escrow with
               your agent's support.
             </p>
-            <a href="#" className="font-medium justify-center flex">
+            <a href="#" className="font-medium justify-center flex items-center">
               Read more
               <RiArrowRightFill />
             </a>
@@ -62,7 +62,7 @@ function Steps() {
               Finalize your loan, transfer utilities, and prepare for closing
               day to get your keys.
             </p>
-            <a href="#" className="font-medium justify-center flex">
+            <a href="#" className="font-medium justify-center flex items-center">
               Read more
               <RiArrowRightFill />
             </a>

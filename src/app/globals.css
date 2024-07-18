@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   @apply text-[20px] text-secondary;
 }
@@ -44,15 +50,13 @@ h1, h2, h3, h4, h5, h6{
   @apply bg-accent hover:bg-accent-hover;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullet{
-  @apply bg-primary
-}
-.swiper-pagination > .swiper-pagination-bullet{
-  @apply bg-primary
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  --swiper-navigation-color: black;
+  @apply hover:text-accent;
 }
 
 .hero::before {
@@ -70,6 +74,18 @@ html {
   z-index: -1; 
   border-bottom-left-radius: 290px; 
 }
+/*
+.socials {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
+
+
 
 
 
