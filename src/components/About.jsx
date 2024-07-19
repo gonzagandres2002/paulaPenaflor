@@ -20,19 +20,25 @@ function About() {
             </p>
             {/**Phone */}
             <div className="flex items-center justify-center xl:justify-start gap-4">
-              <div className="bg-accent/15 w-[93px] h-[93px] rounded-full flex justify-center items-center">
-                <RiPhoneFill className="text-accent text-4xl" />
-              </div>
+              <a href="tel:+13312508701">
+                <div className="bg-accent/15 w-[93px] h-[93px] rounded-full flex justify-center items-center">
+                  <RiPhoneFill className="text-accent text-4xl" />
+                </div>
+              </a>
               <div className="text-left">
-                <div className="text-2xl font-bold">+1 (331) 250-8701</div>
+                <a href="tel:+13312508701">
+                  <div className="text-2xl font-bold">+1 (331) 250-8701</div>
+                </a>
                 <div>Call Us Anytime</div>
               </div>
             </div>
             {/**Button */}
-            <button className="btn btn-primary">
-              Get free stimation
-              <RiArrowRightLine className="text-accent" />
-            </button>
+            <a href="https://wa.me/13312508701?text=Hi%20Paula%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20loan%20services">
+              <button className="btn btn-primary">
+                Get free stimation
+                <RiArrowRightLine className="text-accent" />
+              </button>
+            </a>
           </div>
 
           {/**Image */}

@@ -15,10 +15,12 @@ function Hero() {
               to Your Financial Goals with <br />
               Expertise and Care
             </p>
-            <button className="btn btn-primary mx-auto xl:mx-0">
-              Learn more
-              <RiArrowRightLine className="text-accent" />
-            </button>
+            <a href="https://wa.me/13312508701?text=Hi%20Paula%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20loan%20services">
+              <button className="btn btn-primary mx-auto xl:mx-0">
+                Contact Us
+                <RiArrowRightLine className="text-accent" />
+              </button>
+            </a>
           </div>
         </div>
       </section>

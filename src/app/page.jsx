@@ -8,6 +8,7 @@ import Testimonial from "@/components/Testimonial";
 import Stats from "@/components/Stats";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Form from "@/components/Form";
 
 export default function HomePage() {
   useEffect(() => {
@@ -84,6 +85,7 @@ export default function HomePage() {
           <Testimonial />
           <Stats />
           <Contact />
+          <Form />
           <Footer />
         </div>
       </main>

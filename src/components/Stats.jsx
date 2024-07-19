@@ -9,7 +9,7 @@ function Stats() {
         <div className="grid grid-cols-1 xl:grid-cols-4 gap-12">
           {/**grid item */}
           <div className="stats__item text-center xl:border-r xl:border-accent">
-            <h3 className="h1 text-accent">15+ </h3>
+            <h3 className="h1 text-accent">15+</h3>
             <p>Years of experience</p>
           </div>
           {/**grid item */}
@@ -19,8 +19,8 @@ function Stats() {
           </div>
           {/**grid item */}
           <div className="stats__item text-center xl:border-r xl:border-accent">
-            <h3 className="h1 text-accent">24</h3>
-            <p>Average Loan Approval Time (Hours)</p>
+            <h3 className="h1 text-accent">24 hrs</h3>
+            <p>Average Loan Approval Time</p>
           </div>
           {/**grid item */}
           <div className="stats__item text-center">

@@ -6,7 +6,7 @@ function Contact() {
       className="contact mt-[80px] xl:mt-[150px] relative z-20 flex justify-center"
       id="contact"
     >
-      <div className="contact__container container mx-auto bg-[#04362b] sm:rounded-[70px] py-[80px]">
+      <div className="contact__container container mx-auto bg-primary sm:rounded-[70px] py-[50px]">
         <div className="contact__text">
           <h2 className="h2 text-white mb-4">
             Ready to Secure Your Dream Home?
@@ -16,10 +16,12 @@ function Contact() {
             Peñaflor is here to help you every step of the way. Reach out today
             to begin your journey towards homeownership!
           </p>
-          <button className="btn btn-accent mx-auto">
-            Connect with us
-            <RiArrowRightLine className="text-primary" />
-          </button>
+          <a href="http://localhost:3000/bio">
+            <button className="btn btn-accent mx-auto">
+              Connect with us
+              <RiArrowRightLine className="text-primary"/>
+            </button>
+          </a>
         </div>
       </div>
     </section>

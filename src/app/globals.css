@@ -55,8 +55,16 @@ html {
 }
 
 .swiper-button-next, .swiper-button-prev{
-  --swiper-navigation-color: black;
+  --swiper-navigation-color: black; 
   @apply hover:text-accent;
+}
+
+.contact-inputs:focus{
+  @apply border-[2px] border-accent;
+}
+
+.contact-inputs{
+  @apply w-[400px] h-[50px] px-[25px] text-[#666] rounded-[50px] outline-none border-[1px] border-[#ccc];
 }
 
 .hero::before {
@@ -74,16 +82,7 @@ html {
   z-index: -1; 
   border-bottom-left-radius: 290px; 
 }
-/*
-.socials {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-image: url('/images/bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}*/
+
 
 
 
