@@ -6,8 +6,12 @@ import {
   RiMailFill,
 } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
+import { useTranslations } from "next-intl";
 
 export default function Socials() {
+
+  const t = useTranslations();
+
   return (
     <>
       <div className="socials-content py-4 bg-socials bg-cover bg-center bg-no-repeat">
@@ -24,7 +28,7 @@ export default function Socials() {
           Paula Peñaflor
         </h2>
         <p className="font-medium text-lg text-center">
-          Business Developer
+          {t("businessDeveloper")}
         </p>
         {/**Social items */}
         <div className="flex justify-center items-center mt-6">

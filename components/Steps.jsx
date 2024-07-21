@@ -1,32 +1,34 @@
-import { RiArrowRightFill, RiBankFill, RiHome4Fill, RiFileList3Fill, RiKey2Fill } from "react-icons/ri";
+import { RiBankFill, RiHome4Fill, RiFileList3Fill, RiKey2Fill } from "react-icons/ri";
+import { useTranslations } from 'next-intl';
 
 function Steps() {
+
+  const t = useTranslations();
+
   return (
     <section
       className="steps mt-[80px] xl:mt-[200px] relative z-20 flex justify-center"
       id="steps"
     >
       <div className="container mx-auto">
-      <h2 className="h2 flex justify-center mb-12">Your Path to Homeownership</h2>
+      <h2 className="h2 flex justify-center mb-12">{t("pathHome")}</h2>
         <div className="grid grid-cols-1 gap-12 xl:grid-cols-4">
           <div className="steps__step text-center">
             <div className="mb-4 justify-center flex">
               <RiBankFill className="text-5xl text-accent" />
             </div>
-            <h3 className="h3 mb-5">Get Pre-Approved</h3>
+            <h3 className="h3 mb-5">{t("preApproved")}</h3>
             <p className="mb-5 max-w-md mx-auto">
-              Collect financial documents and apply for pre-approval to know
-              your budget.
+              {t("collectDocuments")}
             </p>
           </div>
           <div className="steps__step text-center">
             <div className="mb-4 justify-center flex">
               <RiHome4Fill className="text-5xl text-accent" />
             </div>
-            <h3 className="h3 mb-5">Find and Secure Your Home</h3>
+            <h3 className="h3 mb-5">{t("findSecureHome")}</h3>
             <p className="mb-5 max-w-md mx-auto">
-              Choose a real estate agent, list your needs, search for homes, and
-              make an offer.
+              {t("chooseAgent")}
             </p>
           </div>
           <div className="steps__step text-center">
@@ -34,21 +36,19 @@ function Steps() {
               <RiFileList3Fill className="text-5xl text-accent" />
             </div>
             <h3 className="h3 mb-5">
-              Make an Offer and Navigate the Escrow Process
+              {t("makeOffer")}
             </h3>
             <p className="mb-5 max-w-md mx-auto">
-              Make an offer, handle inspections, and work through escrow with
-              your agent's support.
+              {t("offerEscrow")}
             </p>
           </div>
           <div className="steps__step text-center">
             <div className="mb-4 justify-center flex">
               <RiKey2Fill className="text-5xl text-accent" />
             </div>
-            <h3 className="h3 mb-5">Complete the Purchase Process</h3>
+            <h3 className="h3 mb-5">{t("completePurchase")}</h3>
             <p className="mb-5 max-w-md mx-auto">
-              Finalize your loan, transfer utilities, and prepare for closing
-              day to get your keys.
+              {t("finalizeLoan")}
             </p>
           </div>
         </div>

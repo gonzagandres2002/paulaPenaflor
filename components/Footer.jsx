@@ -5,8 +5,12 @@ import {
   RiMailFill,
 } from "react-icons/ri";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function Footer() {
+
+  const t = useTranslations("");
+
   return (
     <footer className="footer mt-[80px] xl:mt-[50px] relative z-20">
       <div className="container mx-auto">
@@ -17,7 +21,7 @@ function Footer() {
               <Image src="/images/logo.png" width={80} height={80} alt="" />
             </a>
             <p className="mb-8 text-xl">
-              Guiding You Home, One Step at a Time.
+              {t("guidingHome")}
             </p>
             {/**Socials */}
             <ul className="text-primary flex gap-[54px] justify-center xl:justify-start mb-10">
@@ -54,26 +58,26 @@ function Footer() {
           </div>
           <div className="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end">
             <div className="footer__item">
-              <h3 className="h3 mb-3">Pages</h3>
+              <h3 className="h3 mb-3">{t("pages")}</h3>
               <ul className="flex flex-col gap-4">
                 <li>
-                  <a href="#about">About Us</a>
+                  <a href="#about">{t("about")}</a>
                 </li>
                 <li>
-                  <a href="#testimonials">Testimonials</a>
+                  <a href="#testimonials">{t("testimonials")}</a>
                 </li>
                 <li>
-                  <a href="#steps">Our Success</a>
+                  <a href="#steps">{t("steps")}</a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a href="#contact">{t("contact")}</a>
                 </li>
               </ul>
             </div>
 
             {/*Missing Resources column with: Why Paula Peñaflor, Blog, FAQs, Legal/State Licensing*/}
             <div className="footer__item max-w-[260px] mx-auto xl:mx-0">
-              <h3 className="h3 mb-3">Contact</h3>
+              <h3 className="h3 mb-3">{t("contact")}</h3>
               <div className="flex flex-col gap-6 text-[20px]">
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=259+S+Central+Ave,+Hartsdale,+NY+10530,+USA"

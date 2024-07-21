@@ -56,6 +56,7 @@ html {
 
 .swiper-button-next, .swiper-button-prev{
   --swiper-navigation-color: black; 
+  --swiper-navigation-size: 40px;
   @apply hover:text-accent;
 }
 
@@ -64,7 +65,7 @@ html {
 }
 
 .contact-inputs{
-  @apply w-[400px] h-[50px] px-[25px] text-[#666] rounded-[50px] outline-none border-[1px] border-[#ccc];
+  @apply xl:w-[400px] w-[300px] h-[50px] px-[25px] text-[#666] rounded-[50px] outline-none border-[1px] border-[#ccc];
 }
 
 .hero::before {

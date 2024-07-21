@@ -1,4 +1,9 @@
+import { useTranslations } from 'next-intl';
+
 function Stats() {
+
+  const t = useTranslations();
+
   return (
     <section
       className="stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary py-[80px] xl:py-[150px]"
@@ -10,22 +15,22 @@ function Stats() {
           {/**grid item */}
           <div className="stats__item text-center xl:border-r xl:border-accent">
             <h3 className="h1 text-accent">15+</h3>
-            <p>Years of experience</p>
+            <p>{t("yearsExperience")}</p>
           </div>
           {/**grid item */}
           <div className="stats__item text-center xl:border-r xl:border-accent">
             <h3 className="h1 text-accent">500+</h3>
-            <p>Loans Closed</p>
+            <p>{t("loansClosed")}</p>
           </div>
           {/**grid item */}
           <div className="stats__item text-center xl:border-r xl:border-accent">
             <h3 className="h1 text-accent">24 hrs</h3>
-            <p>Average Loan Approval Time</p>
+            <p>{t("avgLoanApprovalTime")}</p>
           </div>
           {/**grid item */}
           <div className="stats__item text-center">
             <h3 className="h1 text-accent">95%</h3>
-            <p>Successful Loan Applications</p>
+            <p>{t("successfulApplications")}</p>
           </div>
         </div>
       </div>

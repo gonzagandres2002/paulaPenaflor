@@ -1,22 +1,20 @@
 import { RiArrowRightLine, RiPhoneFill } from "react-icons/ri";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 function About() {
+
+  const t = useTranslations();
+
   return (
     <section className="about mt-[80px] xl:mt-[200px] relative z-20" id="about">
       <div className="container mx-auto xl:px-0">
         <div className="flex flex-col xl:flex-row text-center xl:text-left justify-between gap-8 items-center xl:gap-[74px]">
           {/*Text*/}
           <div className="about__text flex-1 order-2 xl:order-none mx-auto max-w-xl xl:max-w-lg flex flex-col items-center text-center xl:items-center gap-8">
-            <h2 className="h2">About Paula Peñaflor</h2>
+            <h2 className="h2">{t("aboutPaula")}</h2>
             <p>
-              With over 15 years of experience in the mortgage industry, Paula
-              Peñaflor is committed to guiding you through every step of the
-              home buying process. Her expertise and personalized approach
-              ensure that you receive the best loan options tailored to your
-              financial needs. Paula's mission is to make homeownership
-              accessible and stress-free, turning your dreams into reality with
-              professionalism and care.
+              {t("paulaExperience")}
             </p>
             {/**Phone */}
             <div className="flex items-center justify-center xl:justify-start gap-4">
@@ -29,7 +27,7 @@ function About() {
                 <a href="tel:+13312508701">
                   <div className="text-2xl font-bold">+1 (331) 250-8701</div>
                 </a>
-                <div>Call Us Anytime</div>
+                <div>{t("callAnytime")}</div>
               </div>
             </div>
             {/**Button */}

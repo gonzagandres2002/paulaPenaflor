@@ -1,9 +1,13 @@
-import "@/app/globals.css";
+import "/app/globals.css";
 import Image from "next/image";
 import { useEffect } from "react";
 import { RiMenuFill } from "react-icons/ri";
+import { useTranslations } from 'next-intl';
 
 function Navbar() {
+
+  const t = useTranslations();
+
   useEffect(() => {
     const navTriggerBtn = document.getElementById("nav_trigger_btn");
     const navMenu = document.getElementById("nav_menu");
@@ -40,25 +44,25 @@ function Navbar() {
             id="nav_menu"
           >
             <li>
-              <a href="#home">Home</a>
+              <a href="#home">{t("home")}</a>
             </li>
             <li>
-              <a href="#steps">Steps</a>
+              <a href="#steps">{t("steps")}</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about">{t("about")}</a>
             </li>
             <li>
-              <a href="#testimonial">Testimonials</a>
+              <a href="#testimonial">{t("testimonials")}</a>
             </li>
             <li>
-              <a href="#stats">Our Success</a>
+              <a href="#stats">{t("ourSuccess")}</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">{t("contact")}</a>
             </li>
             <li>
-              <a href="#form" className="bg-primary hover:bg-primary-hover h-[40px] px-[15px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2">Get Started</a>
+              <a href="#form" className="bg-primary hover:bg-primary-hover h-[40px] px-[15px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2">{t("getStarted")}</a>
             </li>
           </ul>
         </nav>
