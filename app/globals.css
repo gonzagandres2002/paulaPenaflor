@@ -33,9 +33,8 @@ h1, h2, h3, h4, h5, h6{
   @apply text-[25px];
 }
 
-
 .nav-is-open{
-  @apply h-[350px] p-6;
+  @apply h-[370px] p-6;
 }
 
 .btn{
@@ -65,7 +64,7 @@ html {
 }
 
 .contact-inputs{
-  @apply xl:w-[400px] w-[300px] h-[50px] px-[25px] text-[#666] rounded-[50px] outline-none border-[1px] border-[#ccc];
+  @apply xl:w-[350px] w-[300px] h-[50px] px-[25px] text-[#666] rounded-[50px] outline-none border-[1px] border-[#ccc];
 }
 
 .hero::before {
@@ -83,6 +82,7 @@ html {
   z-index: -1; 
   border-bottom-left-radius: 290px; 
 }
+
 
 
 

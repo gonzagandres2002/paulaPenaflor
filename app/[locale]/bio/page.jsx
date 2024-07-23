@@ -7,6 +7,7 @@ import {
 } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
 import { useTranslations } from "next-intl";
+import DropdownMenu from "../../../components/DropdownMenu";
 
 export default function Socials() {
 

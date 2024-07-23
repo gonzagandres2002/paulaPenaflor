@@ -8,11 +8,12 @@ export default function Form() {
   return (
     <section className="mt-[80px] xl:mt-[150px] relative z-20 flex justify-center bg-accent-secondary py-10" id="form">
       <div className="flex justify-evenly items-center bg-white rounded-[70px] pb-20 pt-10 xl:w-1/3 px-10 mx-auto">
-        <form action="" className="flex flex-col items-start gap-10">
+        <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col items-start gap-10">
           <div className="contact-left-title">
             <h2 className="h2">{t("letUsContact")}</h2>
             <hr className="bg-accent w-60 h-1 rounded-xl" />
           </div>
+          <input type="hidden" name="access_key" value="f794238f-0aa2-4a72-b838-6e14710ac284"/>
           <input
             type="text"
             name="name"
