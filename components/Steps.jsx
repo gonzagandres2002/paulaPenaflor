@@ -11,7 +11,7 @@ function Steps() {
       id="steps"
     >
       <div className="container mx-auto">
-      <h2 className="h2 flex justify-center mb-12">{t("pathHome")}</h2>
+      <h2 className="h2 flex justify-center text-center mb-12">{t("pathHome")}</h2>
         <div className="grid grid-cols-1 gap-12 xl:grid-cols-4">
           <div className="steps__step text-center">
             <div className="mb-4 justify-center flex">

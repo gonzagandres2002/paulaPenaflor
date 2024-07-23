@@ -8,7 +8,6 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 function Footer() {
-
   const t = useTranslations("");
 
   return (
@@ -17,12 +16,15 @@ function Footer() {
         <div className="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px] xl:px-44">
           <div className="footer__item w-full max-w-[400px] mx-auto mb-auto text-center xl:text-left">
             {/**Logo */}
-            <a className="flex justify-center xl:justify-start mb-8" href="#">
-              <Image src="/images/logo.png" width={80} height={80} alt="" />
-            </a>
-            <p className="mb-8 text-xl">
-              {t("guidingHome")}
-            </p>
+            <Image
+              src="/images/logo.png"
+              width={80}
+              height={80}
+              alt=""
+              className="flex justify-center xl:justify-start mb-8"
+            />
+
+            <p className="mb-8 text-xl">{t("guidingHome")}</p>
             {/**Socials */}
             <ul className="text-primary flex gap-[54px] justify-center xl:justify-start mb-10">
               <li>
@@ -96,7 +98,7 @@ function Footer() {
       </div>
       {/**Copyright */}
       <p className="footer__copyright text-center text-lg py-10 bg-white xl:border-t">
-        Copyright &copy; Andrés González 2024. All rights reserved.
+        Copyright &copy; Paula Peñaflor 2024. All rights reserved.
       </p>
     </footer>
   );

@@ -12,16 +12,16 @@ function Contact() {
     >
       <div className="contact__container container mx-auto bg-primary sm:rounded-[70px] py-[50px]">
         <div className="contact__text">
-          <h2 className="h2 text-white mb-4">
+          <h2 className="h2 text-white mb-4 text-center">
             {t("secureDreamHome")}
           </h2>
-          <p className="text-white mb-8 max-w-sm xl:max-w-none mx-auto">
+          <p className="text-white mb-8 max-w-sm xl:max-w-4xl mx-auto text-center">
             {t("reachOut")}
           </p>
           <a href="http://localhost:3000/bio">
             <button className="btn btn-accent mx-auto">
               {t("connectWithUs")}
-              <RiArrowRightLine className="text-primary"/>
+              <RiArrowRightLine className="text-white"/>
             </button>
           </a>
         </div>

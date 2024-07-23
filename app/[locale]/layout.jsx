@@ -11,8 +11,8 @@ const jost = Jost({
 
 export const metadata = {
   title: "Pau penaflor",
-  description: "Mortgage Broker web site",
-  keywords: "next.js, react, javascript",
+  description: "Business Developer web site",
+  keywords: "Business, Mortgage, Real Estate, Finance",
 };
 
 export default function RootLayout({ children, params: { locale } }) {

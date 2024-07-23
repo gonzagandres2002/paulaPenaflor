@@ -12,12 +12,12 @@ function Hero() {
       >
         <div className="container mx-auto h-full flex items-center justify-center xl:justify-start">
           <div className="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start">
-            <h1 className="h1 mb-8 text-gray-950">{t("trustedDev")}</h1>
-            <p className="mb-8 text-gray-950">{t("navigatePath")}</p>
+            <h1 className="h1 mb-8 text-white">{t("trustedDev")}</h1>
+            <p className="mb-8 text-white">{t("navigatePath")}</p>
             <a href="https://wa.me/13312508701?text=Hi%20Paula%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20loan%20services">
-              <button className="btn btn-primary mx-auto xl:mx-0">
+              <button className="btn btn-accent mx-auto xl:mx-0">
                 {t("contactUs")}
-                <RiArrowRightLine className="text-accent" />
+                <RiArrowRightLine className="text-white" />
               </button>
             </a>
           </div>

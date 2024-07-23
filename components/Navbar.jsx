@@ -42,7 +42,7 @@ function Navbar() {
             <RiMenuFill className="text-4l text-primary" />
           </div>
           <ul
-            className="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300 items-center mr-10"
+            className="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300 items-center mr-4"
             id="nav_menu"
           >
             <li>
