@@ -16,13 +16,14 @@ function Footer() {
         <div className="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px] xl:px-44">
           <div className="footer__item w-full max-w-[400px] mx-auto mb-auto text-center xl:text-left">
             {/**Logo */}
-            <Image
-              src="/images/logo.png"
-              width={80}
-              height={80}
-              alt=""
-              className="flex justify-center xl:justify-start mb-8"
-            />
+            <div className="flex justify-center xl:justify-start mb-8">
+              <Image
+                src="/images/logo.png"
+                width={80}
+                height={80}
+                alt=""
+              />
+            </div>
 
             <p className="mb-8 text-xl">{t("guidingHome")}</p>
             {/**Socials */}

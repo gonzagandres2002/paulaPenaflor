@@ -10,9 +10,9 @@ const jost = Jost({
 });
 
 export const metadata = {
-  title: "Pau penaflor",
+  title: "Paula Penaflor",
   description: "Business Developer web site",
-  keywords: "Business, Mortgage, Real Estate, Finance",
+  keywords: "Business, Mortgage, Real Estate, Finance, Paula Penaflor, Paula Peñaflor",
 };
 
 export default function RootLayout({ children, params: { locale } }) {
