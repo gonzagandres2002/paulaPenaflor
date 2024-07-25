@@ -9,9 +9,24 @@ import Stats from "/components/Stats";
 import Contact from "/components/Contact";
 import Footer from "/components/Footer";
 import Form from "/components/Form";
+import Head from 'next/head';
 
 
 export default function HomePage() {
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Paula Peñaflor",
+    "jobTitle": "Business Developer",
+    "url": "https://paulapenaflor.com",
+    "image": "https://paulapenaflor.com/images/opengraph.png",
+    "sameAs": [
+      "https://facebook.com/profile.php?id=100094635926073",
+      "https://www.instagram.com/paulaapenaflor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    ],
+    "description": "Paula Peñaflor, an experienced Business Developer, helps clients with home purchases, refinancing, FHA loans, jumbo loans, and more. Visit our site for expert mortgage advice and personalized financial solutions."
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -78,6 +93,25 @@ export default function HomePage() {
 
   return (
     <>
+    <Head>
+        <title>Paula Penaflor | Home</title>
+        <meta name="description" content="Paula Peñaflor, an experienced Business Developer, helps clients with home purchases, refinancing, FHA loans, jumbo loans, and more. Visit our site for expert mortgage advice and personalized financial solutions." />
+        <meta name="keywords" content="Loan Officer, Business, Mortgage, Real Estate, Finance, Home Purchase, Refinance, FHA Loans, Jumbo Loans, Paula Penaflor, Paula Peñaflor" />
+        <meta property="og:url" content="https://paulapenaflor.com" />
+        <meta property="og:title" content="Paula Penaflor" />
+        <meta property="og:description" content="Paula Peñaflor, an experienced Business Developer, helps clients with home purchases, refinancing, FHA loans, jumbo loans, and more. Visit our site for expert mortgage advice and personalized financial solutions." />
+        <meta property="og:image" content="https://paulapenaflor.com/images/opengraph.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Paula Peñaflor Open Graph Image" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Paula Penaflor | Business Developer" />
+        <meta name="twitter:description" content="Paula Peñaflor, an experienced Business Developer, helps clients with home purchases, refinancing, FHA loans, jumbo loans, and more. Visit our site for expert mortgage advice and personalized financial solutions." />
+        <meta name="twitter:image" content="https://paulapenaflor.com/images/opengraph.png" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Head>
     <Navbar />
       <main className="max-w-[1920px] mx-auto bg-white overflow-hidden">
         <div>
