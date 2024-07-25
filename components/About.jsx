@@ -2,6 +2,14 @@ import { RiArrowRightLine, RiPhoneFill } from "react-icons/ri";
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 
+export const metadata = {
+  title: {
+    default: "About Paula Penaflor",
+    es: "Sobre Paula Peñaflor",
+    template: "%s | Paula Penaflor",
+  },
+};
+
 function About() {
 
   const t = useTranslations();

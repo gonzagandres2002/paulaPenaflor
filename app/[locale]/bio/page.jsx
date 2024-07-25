@@ -8,6 +8,10 @@ import {
 import { TbWorld } from "react-icons/tb";
 import { useTranslations } from "next-intl";
 
+export const metadata = {
+  title: "Socials",
+}
+
 export default function Socials() {
 
   const t = useTranslations();
