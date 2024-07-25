@@ -6,6 +6,7 @@ import {
 } from "react-icons/ri";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "../navigation";
 
 function Footer() {
   const t = useTranslations("");
@@ -13,16 +14,11 @@ function Footer() {
   return (
     <footer className="footer mt-[80px] xl:mt-[50px] relative z-20">
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px] xl:px-44">
+        <div className="flex flex-col xl:flex-row xl:gap-[100px] xl:px-44">
           <div className="footer__item w-full max-w-[400px] mx-auto mb-auto text-center xl:text-left">
             {/**Logo */}
             <div className="flex justify-center xl:justify-start mb-8">
-              <Image
-                src="/images/logo.png"
-                width={80}
-                height={80}
-                alt=""
-              />
+              <Image src="/images/logo.png" width={80} height={80} alt="" />
             </div>
 
             <p className="mb-8 text-xl">{t("guidingHome")}</p>
@@ -59,6 +55,7 @@ function Footer() {
               </li>
             </ul>
           </div>
+
           <div className="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end">
             <div className="footer__item">
               <h3 className="h3 mb-3">{t("pages")}</h3>
@@ -98,9 +95,17 @@ function Footer() {
         </div>
       </div>
       {/**Copyright */}
-      <p className="footer__copyright text-center text-lg py-10 bg-white xl:border-t">
+      <p className="footer__copyright text-center text-lg pt-10 bg-white xl:border-t">
         Copyright &copy; Paula Peñaflor 2024. All rights reserved.
       </p>
+      <div className="footer__copyright flex justify-center divide-x pb-5">
+        <Link href="/privacy-policy" className="px-3 text-lg">
+          Privacy Policy
+        </Link>
+        <Link href="/terms-of-service" className="px-3 text-lg">
+          Terms of Service
+        </Link>
+      </div>
     </footer>
   );
 }

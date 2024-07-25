@@ -18,7 +18,7 @@ function Contact() {
           <p className="text-white mb-8 max-w-sm xl:max-w-4xl mx-auto text-center">
             {t("reachOut")}
           </p>
-          <a href="http://localhost:3000/bio">
+          <a href="/bio">
             <button className="btn btn-accent mx-auto">
               {t("connectWithUs")}
               <RiArrowRightLine className="text-white"/>
