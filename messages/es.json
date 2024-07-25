@@ -19,7 +19,7 @@
   "completePurchase": "Completa el Proceso de Compra",
   "finalizeLoan": "Finaliza tu préstamo, transfiere servicios y prepárate para el día de cierre para recibir tus llaves.",
   "aboutPaula": "Sobre Paula Peñaflor",
-  "paulaExperience": "Con más de 15 años de experiencia en la industria hipotecaria, Paula Peñaflor está comprometida a guiarte a través de cada paso del proceso de compra de vivienda. Su experiencia y enfoque personalizado aseguran que recibas las mejores opciones de préstamo adaptadas a tus necesidades financieras. La misión de Paula es hacer que la propiedad de una casa sea accesible y libre de estrés, convirtiendo tus sueños en realidad con profesionalismo y cuidado.",
+  "paulaExperience": "Paula Peñaflor está comprometida a guiarte a través de cada paso del proceso de compra de vivienda. Su experiencia y enfoque personalizado aseguran que recibas las mejores opciones de préstamo adaptadas a tus necesidades financieras. La misión de Paula es hacer que la propiedad de una casa sea accesible y libre de estrés, convirtiendo tus sueños en realidad con profesionalismo y cuidado.",
   "callAnytime": "Llámanos en Cualquier Momento",
   "freeEstimation": "Obtén una estimación gratuita",
   "clientReviews": "Lo que dicen los clientes",
@@ -42,5 +42,7 @@
   "guidingHome": "Guiándote a Casa, Paso a Paso.",
   "pages": "Páginas",
   "businessDeveloper": "Desarrolladora de Negocios",
-  "lang":"Es"
+  "lang":"Es",
+  "clientRetentionRate": "Tasa de Retención de Clientes",
+  "customerSatisfaction": "Satisfacción del Cliente"
 }

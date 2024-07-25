@@ -1,7 +1,6 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 function Stats() {
-
   const t = useTranslations();
 
   return (
@@ -14,13 +13,13 @@ function Stats() {
         <div className="grid grid-cols-1 xl:grid-cols-4 gap-12">
           {/**grid item */}
           <div className="stats__item text-center xl:border-r xl:border-accent">
-            <h3 className="h1 text-accent">15+</h3>
-            <p>{t("yearsExperience")}</p>
+            <h3 className="h1 text-accent">98%</h3>
+            <p>{t("customerSatisfaction")}</p>
           </div>
           {/**grid item */}
           <div className="stats__item text-center xl:border-r xl:border-accent">
-            <h3 className="h1 text-accent">500+</h3>
-            <p>{t("loansClosed")}</p>
+            <h3 className="h1 text-accent">90%</h3>
+            <p>{t("clientRetentionRate")}</p>
           </div>
           {/**grid item */}
           <div className="stats__item text-center xl:border-r xl:border-accent">

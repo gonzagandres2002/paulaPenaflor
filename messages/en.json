@@ -19,7 +19,7 @@
   "completePurchase": "Complete the Purchase Process",
   "finalizeLoan": "Finalize your loan, transfer utilities, and prepare for closing day to get your keys.",
   "aboutPaula": "About Paula Peñaflor",
-  "paulaExperience": "With over 15 years of experience in the mortgage industry, Paula Peñaflor is committed to guiding you through every step of the home buying process. Her expertise and personalized approach ensure that you receive the best loan options tailored to your financial needs. Paula's mission is to make homeownership accessible and stress-free, turning your dreams into reality with professionalism and care.",
+  "paulaExperience": "Paula Peñaflor is committed to guiding you through every step of the home buying process. Her expertise and personalized approach ensure that you receive the best loan options tailored to your financial needs. Paula's mission is to make homeownership accessible and stress-free, turning your dreams into reality with professionalism and care.",
   "callAnytime": "Call Us Anytime",
   "freeEstimation": "Get free estimation",
   "clientReviews": "What clients say",
@@ -42,5 +42,7 @@
   "guidingHome": "Guiding You Home, One Step at a Time.",
   "pages": "Pages",
   "businessDeveloper": "Business Developer",
-  "lang":"En"
+  "lang":"En",
+  "clientRetentionRate": "Client Retention Rate",
+  "customerSatisfaction": "Customer Satisfaction"
 }
