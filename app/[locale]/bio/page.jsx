@@ -22,7 +22,7 @@ export default function Socials() {
         <div className="flex justify-center items-center">
           <Image
             src="/images/pau-min.JPG"
-            alt="Profile Picture"
+            alt="Paula Peñaflor Profile Picture"
             height={300}
             width={300}
             className="rounded-full"

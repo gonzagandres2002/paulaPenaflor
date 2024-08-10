@@ -4,7 +4,7 @@ import Navbar from "/components/Navbar";
 import Hero from "/components/Hero";
 import Steps from "/components/Steps";
 import About from "/components/About";
-/*import Testimonial from "/components/Testimonial";*/
+import Testimonial from "/components/Testimonial"
 import Stats from "/components/Stats";
 import Contact from "/components/Contact";
 import Footer from "/components/Footer";
@@ -118,7 +118,7 @@ export default function HomePage() {
           <Hero />
           <Steps />
           <About />
-          {/*<Testimonial />*/}
+          <Testimonial />
           <Stats />
           <Contact />
           <Form />

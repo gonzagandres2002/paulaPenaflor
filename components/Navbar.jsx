@@ -33,7 +33,7 @@ function Navbar() {
       <div className="container mr-2 mx-auto flex justify-between h-full items-center">
         {/*Logo*/}
         <a>
-          <Image src="/images/logo.png" width={60} height={60} alt="Logo" />
+          <Image src="/images/logo.png" width={300} height={300} alt="Paula Peñaflor's Business Developer logo" />
         </a>
         <div className="flex items-center gap-5">
         <nav>

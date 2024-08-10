@@ -18,7 +18,7 @@ function Footer() {
           <div className="footer__item w-full max-w-[400px] mx-auto mb-auto text-center xl:text-left">
             {/**Logo */}
             <div className="flex justify-center xl:justify-start mb-8">
-              <Image src="/images/logo.png" width={80} height={80} alt="" />
+              <Image src="/images/logo.png" width={300} height={300} alt="Paula Peñaflor's Business Developer logo" />
             </div>
 
             <p className="mb-8 text-xl">{t("guidingHome")}</p>

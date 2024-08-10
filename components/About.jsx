@@ -51,7 +51,7 @@ function About() {
           <div className="about__img order-1 xl:order-none mx-auto xl-mx-0">
             <Image
               src="/images/paula-min.jpg"
-              alt=""
+              alt="Paula Peñaflor, Business Developer"
               width={6000 / 7}
               height={4000 / 7}
               className="rounded-bl-[290px] rounded-tr-[200px]"

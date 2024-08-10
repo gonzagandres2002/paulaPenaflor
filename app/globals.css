@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .h1{
-  @apply text-[64px] lg:text-[84px] leading-none;
+  @apply lg:text-[84px] leading-none;
 }
 
 .h2{

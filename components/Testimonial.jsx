@@ -15,17 +15,7 @@ function Testimonial() {
       modules: [Navigation],
       loop: true,
       spaceBetween: 20,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-        },
-        960: {
-          slidesPerView: 2,
-        },
-        1280: {
-          slidesPerView: 3,
-        },
-      },
+      slidesPerView: 1,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -50,17 +40,18 @@ function Testimonial() {
                 {/**slide 1 */}
                 <div className="swiper-slide">
                   {/**item */}
-                  <div className="testimonial__item w-full max-w-[400px] xl:h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
-                    <div className="flex gap-4 mb-6">
+                  <div className="testimonial__item w-full md:h-[440px] bg-white rounded-[30px] flex flex-col justify-center px-9 mx-auto items-center">
+                    <div className="flex gap-4 mb-6 justify-center items-center">
                       <Image
-                        src="/testimonials/01.png"
-                        width="100"
-                        height="100"
-                        alt=""
+                        src="/testimonials/01.jpg"
+                        width="200"
+                        height="200"
+                        alt="Portrait of Mirella Galván, a satisfied client of Paula Peñaflor"
+                        className="rounded-full"
                       />
                       <div>
-                        <h3 className="h3">John Martinez</h3>
-                        <div>Houston, TX</div>
+                        <h3 className="h3">Mirella Galván</h3>
+                        <a href="https://g.co/kgs/Ehpjj1D" target="_blanck"><div>Read Full Review</div></a>
                       </div>
                     </div>
                     <p>
@@ -71,63 +62,22 @@ function Testimonial() {
                 {/**slide 2 */}
                 <div className="swiper-slide">
                   {/**item */}
-                  <div className="testimonial__item w-full max-w-[400px] xl:h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
-                    <div className="flex gap-4 mb-6">
+                  <div className="testimonial__item w-full md:h-[440px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto items-center">
+                    <div className="flex gap-4 mb-6 justify-center items-center">
                       <Image
-                        src="/testimonials/02.png"
-                        width="100"
-                        height="100"
-                        alt=""
+                        src="/testimonials/02.jpg"
+                        width="200"
+                        height="200"
+                        alt="Portrait of Yoryina Caicedo, a happy homeowner thanks to Paula Peñaflor"
+                        className="rounded-full"
                       />
                       <div>
-                        <h3 className="h3">Emily Johnson</h3>
-                        <div>Denver, CO</div>
+                        <h3 className="h3">Yoryina Caicedo</h3>
+                        <a href="https://maps.app.goo.gl/n5wH56xNeJdiztuP9" target="_blanck"><div>Read Full Review</div></a>
                       </div>
                     </div>
                     <p>
-                    {t("client2")}
-                    </p>
-                  </div>
-                </div>
-                {/**slide 3 */}
-                <div className="swiper-slide">
-                  {/**item */}
-                  <div className="testimonial__item w-full max-w-[400px] xl:h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
-                    <div className="flex gap-4 mb-6">
-                      <Image
-                        src="/testimonials/03.png"
-                        width="100"
-                        height="100"
-                        alt=""
-                      />
-                      <div>
-                        <h3 className="h3">Michael Lee</h3>
-                        <div>San Francisco, CA</div>
-                      </div>
-                    </div>
-                    <p>
-                    {t("client3")}
-                    </p>
-                  </div>
-                </div>
-                {/**slide 4 */}
-                <div className="swiper-slide">
-                  {/**item */}
-                  <div className="testimonial__item w-full max-w-[400px] xl:h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
-                    <div className="flex gap-4 mb-6">
-                      <Image
-                        src="/testimonials/04.png"
-                        width="100"
-                        height="100"
-                        alt=""
-                      />
-                      <div>
-                        <h3 className="h3">Sophia Gomez</h3>
-                        <div className="h3">Miami, FL</div>
-                      </div>
-                    </div>
-                    <p>
-                    {t("client4")}
+                      {t("client2")}
                     </p>
                   </div>
                 </div>
