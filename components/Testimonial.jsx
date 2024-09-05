@@ -35,13 +35,13 @@ function Testimonial() {
             {t("clientReviews")}
           </h2>
           <div className="w-full">
-            <div className="testimonial__slider swiper xl:h-[400px] h-auto mb-10">
+            <div className="testimonial__slider swiper h-auto mb-10">
               <div className="swiper-wrapper">
                 {/**slide 1 */}
-                <div className="swiper-slide">
+                <div className="swiper-slide sm:p-10">
                   {/**item */}
-                  <div className="testimonial__item w-full md:h-[440px] bg-white rounded-[30px] flex flex-col justify-center px-9 mx-auto items-center">
-                    <div className="flex gap-4 mb-6 justify-center items-center">
+                  <div className="testimonial__item w-full bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto items-center">
+                    <div className="flex gap-4 mb-6 justify-center items-center mt-6">
                       <Image
                         src="/testimonials/01.jpg"
                         width="200"
@@ -54,16 +54,16 @@ function Testimonial() {
                         <a href="https://g.co/kgs/Ehpjj1D" target="_blanck"><div>Read Full Review</div></a>
                       </div>
                     </div>
-                    <p>
+                    <p className="mb-6">
                       {t("client1")}
                     </p>
                   </div>
                 </div>
                 {/**slide 2 */}
-                <div className="swiper-slide">
+                <div className="swiper-slide sm:p-10">
                   {/**item */}
-                  <div className="testimonial__item w-full md:h-[440px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto items-center">
-                    <div className="flex gap-4 mb-6 justify-center items-center">
+                  <div className="testimonial__item w-full bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto items-center h-full">
+                    <div className="flex gap-4 mb-6 justify-center items-center mt-6">
                       <Image
                         src="/testimonials/02.jpg"
                         width="200"
@@ -76,8 +76,30 @@ function Testimonial() {
                         <a href="https://maps.app.goo.gl/n5wH56xNeJdiztuP9" target="_blanck"><div>Read Full Review</div></a>
                       </div>
                     </div>
-                    <p>
+                    <p className="mb-6">
                       {t("client2")}
+                    </p>
+                  </div>
+                </div>
+                {/**slide 3 */}
+                <div className="swiper-slide sm:p-10">
+                  {/**item */}
+                  <div className="testimonial__item w-full bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto items-center">
+                    <div className="flex gap-4 mb-6 justify-center items-center mt-6">
+                      <Image
+                        src="/testimonials/03.jpg"
+                        width="200"
+                        height="200"
+                        alt="Portrait of Julio Tepan, a satisfied client of Paula Peñaflor"
+                        className="rounded-full"
+                      />
+                      <div>
+                        <h3 className="h3">Julio Tepan</h3>
+                        <a href="https://maps.app.goo.gl/YAwPHn8r1E9wpG967" target="_blanck"><div>Read Full Review</div></a>
+                      </div>
+                    </div>
+                    <p className="mb-6">
+                      {t("client3")}
                     </p>
                   </div>
                 </div>
